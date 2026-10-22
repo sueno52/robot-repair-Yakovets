@@ -20,12 +20,17 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
         timer -= Time.deltaTime;
         if (timer < 0)
         {
             direction = -direction;
             timer = changeTime;
         }
+
     }
 
     void FixedUpdate()
@@ -66,4 +71,5 @@ public class EnemyController : MonoBehaviour
         rigidbody2d.simulated = false;
         animator.SetTrigger("Fixed");
     }
+
 }
