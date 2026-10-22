@@ -31,3 +31,7 @@
 **Яке значення Time Invincible обрала і для якого гравця:** 1.5 с, для гравця-початківця: він встигає вийти із зони шкоди, але стояти в ній все одно небезпечно.
 
 **Що робитиму далі:** виконаю два пункти More things to try (сильніша аптечка і ультра-зона).
+**More things to try: 4 лабораторна**
+- Сильніша аптечка: додала в HealthCollectible поле public int amount і зробила Prefab Variant CollectibleHealthBig з Amount = 2 та іншим виглядом.
+- Ультра-зона: додала в DamageZone поле public int damage і зробила Prefab Variant DamageZoneUltra з Damage = 2 (червоний колір).
+Зрозуміла, що public-поле дозволяє міняти значення в Inspector без зміни коду, а Prefab Variant успадковує все від основного префабу, крім змінених полів.
