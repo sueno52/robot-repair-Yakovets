@@ -1,4 +1,5 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="EndScreen" src="project://database/Assets/EndScreen.uxml?fileID=9197481963319205126&amp;guid=f74207eab5f9fdb40bc9ced98a2a3c29&amp;type=3#EndScreen"/>
     <ui:Template name="NPCDialogue" src="project://database/Assets/NPCDialogue.uxml?fileID=9197481963319205126&amp;guid=24f62ba8467aa2f4cb9e8eb0f1a9b87d&amp;type=3#NPCDialogue"/>
     <ui:VisualElement name="HealthBarBackground" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Ducko/UI/UIHealthFrameDucko.png?fileID=21300000&amp;guid=918e7a741c040c140a699a450f3d6e2d&amp;type=3#UIHealthFrameDucko&quot;); width: 30%; height: 15%; -unity-background-scale-mode: scale-to-fit; margin-top: 2px; margin-left: 2px;">
         <ui:VisualElement name="HealthBarContainer" style="flex-grow: 1; background-image: none; position: absolute; height: 42%; width: 35%; top: 27%; left: 39%; margin-right: 70px; margin-left: 0;">
@@ -7,4 +8,5 @@
         <ui:VisualElement name="CharacterPortrait" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Art/Ruby/UI/CharacterPortrait.png?fileID=21300000&amp;guid=374193bc7008fa34ab9b2bbca376937b&amp;type=3#CharacterPortrait&quot;); -unity-background-scale-mode: scale-to-fit; position: absolute; height: 84%; width: 19%; left: 25%; top: 8%;"/>
     </ui:VisualElement>
     <ui:Instance template="NPCDialogue" name="NPCDialogue" style="position: absolute; top: 85%; right: 10%; bottom: 0%; left: 12%; -unity-text-align: upper-center; width: 73%; height: 10%; margin-top: 0; margin-bottom: 0; margin-left: 0; padding-top: 0;"/>
+    <ui:Instance template="EndScreen" style="position: absolute; right: 0%; top: 0%; left: 0%; bottom: 0%;"/>
 </ui:UXML>
