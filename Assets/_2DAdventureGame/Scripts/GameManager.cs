@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public PlayerController player;
     public UIHandler uiHandler;
     EnemyController[] enemies;
-
+    bool gameOver;
     void Start()
     {
         enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
@@ -14,14 +14,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (gameOver) return;
         if (player.health <= 0)
         {
             uiHandler.DisplayLoseScreen();
+            gameOver = true; 
             Invoke(nameof(ReloadScene), 3f);
         }
         if (AllEnemiesFixed())
         {
             uiHandler.DisplayWinScreen();
+            gameOver = true; 
             Invoke(nameof(ReloadScene), 3f);
         }
     }
